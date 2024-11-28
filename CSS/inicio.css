@@ -2,13 +2,13 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
     margin: 0px;
     padding: 0px;
     background-color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /*Inicio del menu*/
@@ -24,7 +24,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 3px 5px #7d7c7c;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.95);
