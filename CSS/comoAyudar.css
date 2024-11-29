@@ -2,97 +2,85 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/*Inicio del menu*/
-header h1 {
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
     margin: 0px;
     padding: 0px;
-    color: #d52b2b;
- 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-header img {
-    margin: 5px;
-    padding: 5px;
-}
-
-
-/*la sombra de la barra*/
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 3px 5px #7d7c7c;
-
+    padding: 10px 20px;
 }
-/*  navegador*/
+
+header img {
+    height: 50px; /* Tamaño ajustable para dispositivos pequeños */
+}
+
+header h1 {
+    color: #d52b2b;
+    font-size: 1.8rem;
+}
+
 header nav ul {
     list-style: none;
-    padding: 0px;
-    margin: 0px;
     display: flex;
-
+    gap: 15px;
+    flex-wrap: wrap;
 }
-/* hipervinculo del navegador*/
+
 header nav ul li a {
-    display:inline-block;
-    color:#333;
     text-decoration: none;
-    padding: 0.60rem 0.8rem;
-    transition: background-color 1s ease, color 1s ease;
-
+    color: #333;
+    padding: 0.6rem 0.8rem;
+    transition: color 0.3s ease;
 }
-header nav ul li a:hover{
-    color:#d52b2b;
-    font-weight:bolder;
-}/*Fin del menu*/
 
+header nav ul li a:hover {
+    color: #d52b2b;
+}
+
+/* Contenedor de tarjetas */
 .container {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
     justify-content: center;
+    height: auto;
     background-color: #f9f9f9;
+    flex: 1;
 }
 
-/* Tarjetas */
-.programas {
+/* Estilos para las tarjetas */
+.tarjeta {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    padding: 1rem;
-    gap: 1rem;
-    border-radius: 5px;
-    width: 90%;
-    height: 75%;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.programas:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-.tarjeta {
-    position: relative;
-    border: 1px solid #ccc;
-    width: 100%;
-    border-radius: 5px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
     overflow: hidden;
+    width: 55vh;
     background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .tarjeta img {
-    width: 85vw;
-    height: 75%;
+    width: 100%;
+    height: 50vh; 
     object-fit: cover;
     object-position: center center;
 }
@@ -100,38 +88,111 @@ header nav ul li a:hover{
 .tarjeta h2 {
     margin: 0;
     padding: 0.8rem;
-    font-size: 2.3rem;
+    font-size: 1.1rem;
     background-color: #d52b2b;
-    color: #fff;
+    color: white;
     text-align: center;
 }
 
 .tarjeta p {
     padding: 10px;
-    font-size: 1.8rem;
+    font-size: 1rem;
     color: #555;
     text-align: center;
 }
 
 .tarjeta a {
-    font-size: 1.7rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    padding: 20px 20px;
-    text-align: center;
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
     background-color: #d52b2b;
     color: white;
+    text-align: center;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out;
+    border-radius: 7px;
+    font-size: 1rem;
+    width: 80%;
+    transition: background-color 0.3s ease;
 }
 
 .tarjeta a:hover {
     background-color: #a92323;
 }
+footer {
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px; 
 
-@media (min-width:1024px){
-    
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer nav ul li {
+    margin: 0;
+}
+
+footer nav ul li a {
+    display: inline-block;
+    color: #100f0f;
+    text-decoration: none;
+    padding: 0.5rem 0.8rem;
+    transition: background-color 1s ease, color 1s ease;
+}
+
+
+@media (min-width: 720px) {
+
+    .container {
+        gap: 5px;
+    }
+    .tarjeta h2{
+        font-size: 1.3rem;
+    }
+    .tarjeta p{
+        font-size: 1rem;
+    }
+    .tarjeta a{
+        font-size: 1rem;
+        margin-top: auto;
+    }
+}
+@media (min-width: 1024px) {
+    .container {
+        gap: 5px;
+    }
+
+    .tarjeta {
+        width: 40vw;
+        height: 80vh;
+    }
+    .tarjeta h2{
+        font-size: 1.5rem;
+    }
+    .tarjeta p{
+        font-size: 1.3rem;
+    }
+    .tarjeta a{
+        font-size: 1.3rem;
+        margin-top: auto;
+    }
+}
+@media (min-width:1440px){
+    .tarjeta img{
+        height: 80vh;
+    }
 }
