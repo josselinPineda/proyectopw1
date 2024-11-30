@@ -205,6 +205,20 @@ footer {
     z-index: 1000;
 }
 
+<<<<<<< HEAD
+
+footer nav ul {
+    list-style: none;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+
+}
+
+
+=======
+>>>>>>> 9cad719084c663e41b0815acbe4563aef7931187
 /*  navegador*/
 header nav ul {
     list-style: none;
@@ -419,6 +433,37 @@ footer p {
     color: #fff;
 }
 
+<<<<<<< HEAD
+
+/* NOSOTROS*/
+
+
+
+
+
+.info1 {
+    position: relative;
+    max-width: 3000px;
+    overflow: hidden;
+    margin: 0.5rem 0.1rem 0.75rem 0.5rem;
+    padding: 0.7rem 0.5rem;
+}
+
+.info1 p {
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+.info1 h2 {
+    font-size: larger;
+    text-align: center;
+    font-weight: bolder;
+    color: #d52b2b;
+}
+
+
+=======
+>>>>>>> 9cad719084c663e41b0815acbe4563aef7931187
 .info2 {
     display: flex;
     flex-direction: column;
@@ -426,6 +471,10 @@ footer p {
     background-color: #fff;
     padding: 0.5rem;
     gap: 1rem;
+<<<<<<< HEAD
+    margin-top: 20px;
+=======
+>>>>>>> 9cad719084c663e41b0815acbe4563aef7931187
     margin-top: 45px;
 }
 
@@ -442,6 +491,65 @@ footer p {
     padding: 0.5rem;
 }
 
+<<<<<<< HEAD
+.info2 h2 {
+    font-size: larger;
+    text-align: center;
+    font-weight: bolder;
+    color: #d52b2b;
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav {
+        width:auto;
+    }
+    header nav ul{
+        flex-direction: row;
+    }
+    header nav ul li a {
+        display:block;
+		
+    }
+
+    .info2 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info1 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: space-between;
+       
+    }
+    footer nav {
+        width:auto;
+    }
+    footer nav ul{
+        flex-direction: row;
+    }
+    footer nav ul li a {
+        display:inline-block;
+        border:none;
+    }
+
+    
+
+=======
+>>>>>>> 9cad719084c663e41b0815acbe4563aef7931187
 .descripcion p {
     font-size: x-large;
     text-align: left;
@@ -608,6 +716,10 @@ button {
         align-items: center;
     }
 }
+<<<<<<< HEAD
+}
+=======
 
 
 
+>>>>>>> 9cad719084c663e41b0815acbe4563aef7931187
