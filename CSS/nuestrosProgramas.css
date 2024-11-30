@@ -180,13 +180,6 @@ footer nav ul li a {
     }
 }
 @media (min-width: 1024px) {
-    .container {
-        gap: 5px;
-    }
-
-    .tarjeta {
-        height: 100vh;
-    }
     .tarjeta img{
         height: 100vh;
     }
