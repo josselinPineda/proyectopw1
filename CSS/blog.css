@@ -125,34 +125,4 @@ main h1 {
         cursor: pointer;
     }
 
-    footer {
-        background-color: #ba2b2b;
-        padding: 20px;
-        color: white;
-        text-align: center;
-    }
-
-    footer p {
-        margin-bottom: 10px;
-    }
-
-    footer nav ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-
-    footer nav ul li {
-        margin: 0 10px;
-    }
-
-    footer nav ul li a img {
-        width: 30px;
-        transition: transform 0.3s ease;
-    }
-
-    footer nav ul li a img:hover {
-        transform: scale(1.1);
-    }
 }
