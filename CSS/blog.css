@@ -153,3 +153,29 @@ footer nav ul li a img {
 footer nav ul li a img:hover {
     transform: scale(1.1);
 }
+
+@media (max-width: 720px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .articulos {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .articulos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
