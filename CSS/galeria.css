@@ -69,6 +69,7 @@ main h1 {
 }
 
 @media (max-width: 768px) {
+
     .carrusel-container {
         width: 300px;  
     }
@@ -76,7 +77,8 @@ main h1 {
         max-height: 250px;  
     }
 }
-button {
+
+section button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -90,7 +92,7 @@ button {
     border-radius: 50%;
 }
 
-button:hover {
+section button:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -103,40 +105,4 @@ button:hover {
 }
 
 
-footer {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 3px 5px #7d7c7c;
-    background-color: #ba2b2b;
-}
 
-footer nav ul {
-    list-style: none;
-    padding: 10px;
-    margin: 10px;
-    display: flex;
-}
-
-footer nav ul li a {
-    display: inline-block;
-    color: #100f0f;
-    text-decoration: none;
-    padding: 0.60rem 0.8rem;
-    transition: background-color 1s ease, color 1s ease;
-}
-
-footer p {
-    color: #fff;
-}
-
-@media (max-width:700px){
-    header{
-        flex-direction: column;
-    }
-
-    nav{
-        padding: 10px 0px;
-    }
-}
