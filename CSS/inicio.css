@@ -205,6 +205,7 @@ footer {
     z-index: 1000;
 }
 
+<<<<<<< HEAD
 
 footer nav ul {
     list-style: none;
@@ -216,6 +217,8 @@ footer nav ul {
 }
 
 
+=======
+>>>>>>> 9cad719084c663e41b0815acbe4563aef7931187
 /*  navegador*/
 header nav ul {
     list-style: none;
@@ -430,6 +433,7 @@ footer p {
     color: #fff;
 }
 
+<<<<<<< HEAD
 
 /* NOSOTROS*/
 
@@ -458,6 +462,8 @@ footer p {
 }
 
 
+=======
+>>>>>>> 9cad719084c663e41b0815acbe4563aef7931187
 .info2 {
     display: flex;
     flex-direction: column;
@@ -465,7 +471,10 @@ footer p {
     background-color: #fff;
     padding: 0.5rem;
     gap: 1rem;
+<<<<<<< HEAD
     margin-top: 20px;
+=======
+>>>>>>> 9cad719084c663e41b0815acbe4563aef7931187
     margin-top: 45px;
 }
 
@@ -482,6 +491,7 @@ footer p {
     padding: 0.5rem;
 }
 
+<<<<<<< HEAD
 .info2 h2 {
     font-size: larger;
     text-align: center;
@@ -538,6 +548,8 @@ footer p {
 
     
 
+=======
+>>>>>>> 9cad719084c663e41b0815acbe4563aef7931187
 .descripcion p {
     font-size: x-large;
     text-align: left;
@@ -704,4 +716,10 @@ button {
         align-items: center;
     }
 }
+<<<<<<< HEAD
 }
+=======
+
+
+
+>>>>>>> 9cad719084c663e41b0815acbe4563aef7931187
