@@ -7,8 +7,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #fff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -128,6 +127,7 @@ main h1 {
 }
 
 @media (max-width: 768px) {
+
     .carrusel-container {
         width: 300px;  
     }
@@ -135,7 +135,8 @@ main h1 {
         max-height: 250px;  
     }
 }
-button {
+
+section button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -149,7 +150,7 @@ button {
     border-radius: 50%;
 }
 
-button:hover {
+section button:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -198,24 +199,4 @@ footer p {
     nav{
         padding: 10px 0px;
     }
-}
-@media (max-width:700px){
-    header{
-        flex-direction: column;
-    }
-
-    nav{
-        padding: 10px 0px;
-    }
-}
-
-@media (min-width: 720px) {
-
-    .container {
-        gap: 5px;
-    }
-
-}
-@media (min-width: 1024px) {
-
 }
