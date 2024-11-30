@@ -7,23 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/galeria.css">
     <script src="JS/galeria.js"></script>
+    <link rel="stylesheet" href="css/menu.css" />
 </head>
 <body>
-    <header>
+    <!-- Menu-->
+    <header style="background-color: rgb(255, 255, 255);">
         <img src="imagenes/Cruz Roja3.jpg" alt="Cruz Roja">
-        <nav>
-            
+        
+        <!-- Botón del menú de hamburguesa -->
+        <button class="menu-toggle" aria-label="Abrir menú">
+            ☰
+        </button>
+        
+        <!-- Menú de navegación -->
+        <nav class="menu">
             <ul>
                 <li><a href="inicio.html">Inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="nuestrosProgramas.html">Programas</a></li>
                 <li><a href="comoAyudar.html">Cómo ayudar</a></li>
-                <li><a href="galeria.html" class="active">Galería</a></li>
+                <li><a href="galeria.html">Galería</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="eventos.html">Eventos</a></li>
                 <li><a href="contactanos.html">Contactanos</a></li>
-                <li><a href="">Donaciones</a></li>
-                <li><a href="#">Preguntas</a></li>
+                <li><a href="donaciones.html">Donaciones</a></li>
+                <li><a href="preguntas.html">Preguntas</a></li>
             </ul>
         </nav>
     </header>
@@ -113,5 +121,6 @@
             </ul>
         </nav>
     </footer>
+    <script src="JS/menu.js"></script>
 </body>
 </html>
