@@ -1,66 +1,5 @@
-/* Estilos generales */
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
 
-body {
-    margin: 0px;
-    padding: 0px;
-    background-color: #f4f4f4;
-    color: #333;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-/* Encabezado */
-header img {
-    margin: 5px;
-    padding: 5px;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    width: 100%;
-    min-height: 70px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.95);
-    z-index: 1000;
-}
-
-/* Navegación en el encabezado */
-header nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li a {
-    display: inline-block;
-    color: #333;
-    text-decoration: none;
-    padding: 0.60rem 0.8rem;
-    transition: background-color 1s ease, color 1s ease;
-}
-
-header nav ul li a:hover {
-    color: #d52b2b;
-    font-weight: bolder;
-}
-
-header nav ul li a.active {
-    font-weight: bold;
-    color: #d52b2b;
-}
-
-/* Sección principal */
+/* Contenido principal */
 main {
     max-width: 1200px;
     margin: 30px auto;
@@ -75,6 +14,13 @@ h1 {
 }
 
 /* Sección de artículos */
+.articulos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+/* Estilo de artículos */
 .articulos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -120,6 +66,12 @@ h1 {
     margin-top: 10px;
     line-height: 1.6;
 }
+.articulos article .more-content {
+    display: none;
+    color: #333;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
 
 /* Botón "Leer más" */
 .read-more {
@@ -138,54 +90,17 @@ h1 {
     color: #ff4d4d; /* Cambia a un rojo más claro al pasar el cursor */
     text-decoration: underline;
 }
-
-/* Pie de página */
-footer {
-    background-color: #ba2b2b;
-    padding: 20px;
-    color: white;
-    text-align: center;
+.hidden {
+    display: none;
 }
 
-footer p {
-    margin-bottom: 10px;
+.read-more {
+    color: #b30000;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-footer nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-footer nav ul li {
-    margin: 0 10px;
-}
-
-footer nav ul li a img {
-    width: 30px;
-    transition: transform 0.3s ease;
-}
-
-footer nav ul li a img:hover {
-    transform: scale(1.1);
-}
-
-/* Media Queries para Responsividad */
-@media (min-width: 720px) {
-    .articulos {
-        flex-direction: column;
-        justify-content: center;
-        gap: 2rem;
-    }
-}
-
-@media (min-width: 1024px) {
-    .articulos {
-        display: flexbox;
-        flex-direction: row; /* Asegura que los contenedores se alineen horizontalmente */
-        gap: 1rem;
-        margin: 10px auto;
-        padding: 1rem; /* Añade algo de relleno */
-    }
+.read-more:hover {
+    text-decoration: underline;
 }
