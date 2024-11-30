@@ -218,6 +218,7 @@ footer nav ul {
 
 
 =======
+>>>>>>> 9cad719084c663e41b0815acbe4563aef7931187
 /*  navegador*/
 header nav ul {
     list-style: none;
@@ -419,7 +420,6 @@ footer nav ul {
 
 }
 
->>>>>>> 4979792f80877830b573371eb2246ab871c9bb95
 footer nav ul li a {
     display: inline-block;
     color: #100f0f;
@@ -463,7 +463,7 @@ footer p {
 
 
 =======
->>>>>>> 4979792f80877830b573371eb2246ab871c9bb95
+>>>>>>> 9cad719084c663e41b0815acbe4563aef7931187
 .info2 {
     display: flex;
     flex-direction: column;
@@ -474,8 +474,8 @@ footer p {
 <<<<<<< HEAD
     margin-top: 20px;
 =======
+>>>>>>> 9cad719084c663e41b0815acbe4563aef7931187
     margin-top: 45px;
->>>>>>> 4979792f80877830b573371eb2246ab871c9bb95
 }
 
 .mvv {
@@ -549,6 +549,7 @@ footer p {
     
 
 =======
+>>>>>>> 9cad719084c663e41b0815acbe4563aef7931187
 .descripcion p {
     font-size: x-large;
     text-align: left;
@@ -701,7 +702,6 @@ button {
         border: none;
     }
 
->>>>>>> 4979792f80877830b573371eb2246ab871c9bb95
     .info {
         flex-direction: row;
         flex-wrap: wrap;
@@ -716,10 +716,10 @@ button {
         align-items: center;
     }
 }
-
-
-
 <<<<<<< HEAD
-=======
 }
->>>>>>> 4979792f80877830b573371eb2246ab871c9bb95
+=======
+
+
+
+>>>>>>> 9cad719084c663e41b0815acbe4563aef7931187
