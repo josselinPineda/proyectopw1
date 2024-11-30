@@ -283,15 +283,7 @@
 
 /* FIN noticias*/
 
-/* Pie de pagina*/
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 3px 5px #7d7c7c;
-    background-color: #ba2b2b;
-}
 
 .info1 {
     position: relative;
@@ -345,37 +337,6 @@ footer {
     color: #d52b2b;
 }
 
-@media screen and (min-width: 1024px) {
-    header {
-        
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    header nav {
-        width:auto;
-    }
-    header nav ul{
-        flex-direction: row;
-    }
-    header nav ul li a {
-        display:block;
-		
-    }
-
-    .info2 {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .info1 {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
 .descripcion p {
     font-size: x-large;
     text-align: left;
@@ -396,64 +357,88 @@ footer {
     margin: 0.5rem 0.10rem 0.75rem 0.5rem;
     padding: 0.7rem 0.5rem;
 }
+.baner img {
+    margin-top: 50px;
+    height: 400px;
+    width: 100%;
+    object-fit: contain;
+}
 
 .donacion {
-    background-color: #ffffff; 
-    padding: 20px; 
-    border-radius: 10px; 
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%; 
-    max-width: 600px; }
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #cd0f0f;
+}
 
-.dato { 
-       margin-bottom: 15px;
-       font-size: 25px;
-    }
+.donacion h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #cd0f0f;
+}
 
-.dato h2 { 
-       text-align: center; 
-       color: #333333;
-       font-size: 35px;
-    }
 
-.dato label { display: block; 
-           margin-bottom: 5px; 
-           color: #555555; 
-           font-size: 25px;
-        }
-           
-           .dato input  { width: 100%; 
-               padding: 10px; 
-               border: 1px solid #cccccc; 
-               border-radius: 5px;
-                box-sizing: border-box; 
-                font-size: 20px;
-            }
 
-button { 
-   width: 100%; 
-   padding: 10px; 
-   border: none; 
-   border-radius: 5px; 
-   background-color: #007bff; 
-   color: #ffffff; 
-   font-size: 16px; 
-   cursor: pointer;
-   transition: background-color 0.3s ease; }
+.dato {
+    margin-bottom: 15px;
+    font-size: 25px;
+}
 
-   button:hover { background-color: #0056b3;}
+.dato h2 {
+    text-align: center;
+    color: #333333;
+    font-size: 35px;
+}
 
-   .donacion-contenedor {
-    display: flex; 
-    flex-direction: row; 
-    gap: 2rem; 
-    justify-content: center; 
-    align-items: flex-start; 
+.dato label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555555;
+    font-size: 25px;
+}
+
+.dato input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.botondonar{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #b12520;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botondonar:hover {
+    background-color: #f1f5fa;
+    color: #b12520;
+    
+}
+
+
+.donacion-contenedor {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
     padding: 1rem;
 }
 
 .donacion {
-    flex: 1; 
+    flex: 1;
     background-color: #f9f9f9;
     padding: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -461,7 +446,7 @@ button {
 }
 
 .con {
-    flex: 1; 
+    flex: 1;
     background-color: #fff;
     padding: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -474,8 +459,53 @@ button {
     line-height: 1.8;
 }
 
+@media screen and (min-width: 1024px) {
+    header {
 
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
+    header nav {
+        width: auto;
+    }
+
+    header nav ul {
+        flex-direction: row;
+    }
+
+    header nav ul li a {
+        display: block;
+
+    }
+
+    .info2 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info1 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .donacion-contenedor {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .con {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 
 
 @media (min-width: 720px) {
@@ -483,7 +513,7 @@ button {
         flex-direction: row;
         justify-content: space-between;
 
-    
+
     }
 
     header nav ul {
@@ -497,15 +527,10 @@ button {
         align-items: center;
     }
 
-    
+
+
 }
 
-.baner img {
-    margin-top: 50px;
-    height: 400px;
-    width: 100%;
-    object-fit: contain;
-}
 
 
 @media (min-width:720px) {
@@ -541,5 +566,4 @@ button {
         justify-content: center;
         align-items: center;
     }
-}
-}
+}}
