@@ -1,76 +1,4 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; 
-    margin: 0px;
-    padding: 0px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-header img {
-    height: 50px;
-}
-
-/* Botón del menú hamburguesa */
-.menu-toggle {
-    font-size: 1.8rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 2; /* Asegurarse de que esté sobre el menú */
-}
-
-/* Menú inicial oculto */
-nav.menu {
-    display: none; /* Ocultar por defecto */
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    background: white;
-    width: 200px;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-nav.menu.active {
-    display: block; /* Mostrar cuando esté activo */
-}
-
-nav.menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 10px;
-}
-
-nav.menu ul li {
-    margin: 10px 0;
-}
-
-nav.menu ul li a {
-    text-decoration: none;
-    color: #333;
-    padding: 10px 15px;
-    display: block;
-    transition: background-color 0.3s ease;
-}
-
-nav.menu ul li a:hover {
-    background-color: #f4f4f4;
-}
 /* Contenedor de tarjetas */
 .container {
     display: flex;
@@ -142,42 +70,6 @@ nav.menu ul li a:hover {
 .tarjeta a:hover {
     background-color: #a92323;
 }
-footer {
-    width: 100%;
-    background-color: red;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px; 
-
-}
-
-footer p {
-    color: #fff;
-    text-align: center;
-    margin-top: 10px;
-}
-
-footer nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-footer nav ul li {
-    margin: 0;
-}
-
-footer nav ul li a {
-    display: inline-block;
-    color: #100f0f;
-    text-decoration: none;
-    padding: 0.5rem 0.8rem;
-    transition: background-color 1s ease, color 1s ease;
-}
-
 
 @media (min-width: 720px) {
 
@@ -215,35 +107,7 @@ footer nav ul li a {
         font-size: 1.3rem;
         margin-top: auto;
     }
-    .menu-toggle {
-        display: none; /* Ocultar el botón en pantallas grandes */
-    }
-
-    nav.menu {
-        display: flex; /* Mostrar el menú como una barra horizontal */
-        position: static;
-        background: none;
-        box-shadow: none;
-        width: auto;
-    }
-
-    nav.menu ul {
-        list-style: none;
-        display: flex;
-        gap: 15px;
-        flex-wrap: wrap;
-    }
-
-    nav.menu ul li {
-        margin: 0;
-    }
-
-    nav.menu ul li a {
-        text-decoration: none;
-    color: #333;
-    padding: 0.6rem 0.8rem;
-    transition: color 0.3s ease;
-    }
+    
 }
 @media (min-width:1440px){
     .tarjeta img{
