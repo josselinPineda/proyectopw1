@@ -1,0 +1,121 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+}
+
+header img {
+    margin: 5px;
+    padding: 5px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    padding: 0.60rem 0.8rem;
+    transition: background-color 1s ease, color 1s ease;
+}
+
+header nav ul li a:hover {
+    color: #d52b2b;
+    font-weight: bolder;
+}
+
+main h1 {
+    text-align: center;
+    color: #b30000;
+    padding: 20px;
+}
+
+.articulos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.articulos article {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.articulos article img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.articulos article h2 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.articulos article p {
+    font-size: 1em;
+    color: #666;
+}
+
+.articulos article a {
+    text-decoration: none;
+    color: #b30000;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 3px 5px #7d7c7c;
+    background-color: #ba2b2b;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+
+}
+
+footer nav ul li a {
+    display: inline-block;
+    color: #100f0f;
+    text-decoration: none;
+    padding: 0.60rem 0.8rem;
+    transition: background-color 1s ease, color 1s ease;
+
+}
+
+footer p {
+    color: #fff;
+}

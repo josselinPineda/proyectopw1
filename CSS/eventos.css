@@ -1,0 +1,357 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+
+/*Inicio del menu*/
+header h1 {
+    margin: 0px;
+    padding: 0px;
+    color: #d52b2b;
+
+}
+
+header img {
+    margin: 5px;
+    padding: 5px;
+}
+
+
+/*la sombra de la barra*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 3px 5px #7d7c7c;
+    overflow: hidden;
+    /* Evita que los hijos desborden */
+
+}
+
+/*  navegador*/
+header nav ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+
+}
+
+/* hipervinculo del navegador*/
+header nav ul li a {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    padding: 0.60rem 0.8rem;
+    transition: background-color 1s ease, color 1s ease;
+
+}
+
+header nav ul li a:hover {
+    color: #d52b2b;
+    font-weight: bolder;
+
+}
+
+/*Fin del menu*/
+
+
+/* Pie de pagina*/
+/* Pie de página */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 3px 5px #7d7c7c;
+    background-color: #ba2b2b;
+    padding: 10px;
+    width: 100%;
+    /* Asegura que ocupe todo el ancho de la pantalla */
+    margin: 0;
+    /* Elimina cualquier margen extra */
+    box-sizing: border-box;
+
+}
+
+
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer nav ul li {
+    margin: 0;
+}
+
+footer nav ul li a {
+    display: inline-block;
+    color: #100f0f;
+    text-decoration: none;
+    padding: 0.5rem 0.8rem;
+    transition: background-color 1s ease, color 1s ease;
+}
+
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 70vh;
+
+}
+
+.slider .frametrack {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    transition: left 0.5s ease-in-out;
+}
+
+
+.slider .frametrack .slide {
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+}
+
+.slider .frametrack .slide img {
+    display: block;
+    width: 100vw;
+    height: 70vh;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.slider .frametrack .slide div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px 10px;
+    /* Espacio reducido alrededor del texto */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+    box-shadow: 3px 3px 5px #000;
+    box-sizing: border-box;
+    /* Asegura que padding no altere el tamaño de la caja */
+}
+
+.slider .frametrack .slide h2 {
+    color: #000;
+    font-size: 3rem;
+    /* Ajusta el tamaño del texto según sea necesario */
+    text-align: right;
+    padding: 1rem;
+    /* Añade algo de padding para darle espacio al texto */
+    margin: 0;
+}
+
+.slider .frametrack .slide div::before {
+    content: '';
+    width: 380px;
+    height: 380px;
+    transform: translate(-50%, -50%);
+    background-image: radial-gradient(circle, #0000 45%, #000f 48%);
+
+}
+
+/* Estilos base para dispositivos móviles */
+.container {
+    max-width: 100%;
+    /* Se adapta al ancho de la pantalla */
+    margin: 1rem auto;
+    padding: 0.5rem;
+    overflow: hidden;
+}
+
+.info {
+    font-size: 1.4rem;
+    text-align: justify;
+    margin: 0.25rem 0;
+    padding: 0.5rem 2rem;
+
+}
+
+.cajas {
+    display: flex;
+    flex-direction: column;
+    /* Organización en columna por defecto */
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: stretch;
+    /* Estira los elementos para ocupar todo el ancho */
+}
+
+.evento {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    /* Distribuye el contenido internamente de forma uniforme */
+    border: 1px solid #000;
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    height: 500px;
+    /* Ajusta la altura automáticamente */
+    overflow: hidden;
+    background-color: #fff;
+    margin: 0 auto;
+    
+}
+
+.evento img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+
+.evento h3 {
+    text-align: center;
+    margin: 0px;
+    padding: 0.75rem 0.5rem;
+    font-size: 1.8rem;
+    color: #d52b2b;
+}
+
+.evento p {
+    font-size: 1.4rem;
+    text-align: justify;
+    margin: 0.25rem 0;
+    padding: 1rem;
+
+}
+
+.evento a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    text-align: center;
+    padding: 0.7rem 0.5rem;
+    border-radius: 27px;
+    box-shadow: 3px 3px 7px #000;
+    margin: 1rem 2rem;
+}
+
+
+@media (min-width: 720px) {
+   
+
+    .container {
+        max-width: 720px;
+        padding: 0.5rem 1rem;
+    }
+
+    .cajas {
+        padding: 0.5rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .evento {
+        height: 500px;
+        width: 300px;
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    .evento img {
+        width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+        height: 28vh; /* Establece una altura fija de 30% del alto de la pantalla */
+        object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsionar */
+        object-position: center center; /* Centra la imagen dentro del contenedor */
+    }
+
+
+    .evento h3{
+        margin: 0px;
+        padding: 0.75rem 0.5rem;
+        font-size: 1.2rem;
+    }
+    
+    .evento p {
+        font-size: 1rem; /* Ajusta el tamaño del texto */
+    }
+
+    .evento a {
+        margin-top: auto;
+        /* Empuja <a> hacia abajo */
+        margin-bottom: 1rem;
+        /* Espacio entre el botón y el fondo */
+    }
+
+}
+
+
+
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+        padding: 0.5rem 1rem;
+    }
+
+    .cajas {
+        padding: 0.5rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .evento {
+        height: 530px;
+        /* Define una altura mínima uniforme */
+        width: 100%;
+        /* Ocupa todo el ancho disponible */
+        max-width: 300px;
+        /* Máximo ancho para evitar que se extienda demasiado */
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    .evento h3 {
+        margin: 0px;
+        padding: 0.75rem 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .evento p {
+        font-size: 1rem;
+        margin: 0.25rem 0;
+        padding: 0.5rem;
+    }
+
+    .evento a {
+        margin-top: auto;
+        /* Empuja <a> hacia abajo */
+        margin-bottom: 1rem;
+        /* Espacio entre el botón y el fondo */
+    }
+
+    .evento img {
+        width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+        height: 28vh; /* Establece una altura fija de 30% del alto de la pantalla */
+        object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsionar */
+        object-position: center center; /* Centra la imagen dentro del contenedor */
+    }
+
+    
+}
