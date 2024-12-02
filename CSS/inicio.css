@@ -1,9 +1,5 @@
 /*Inicio*/
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
+
 main {
 	max-width: 1000px;
 	width: 90%;
@@ -617,24 +613,7 @@ main {
 	}}
 
     @media screen and (min-width: 1024px) {
-        header {
-    
-            flex-direction: row;
-            justify-content: space-between;
-        }
-    
-        header nav {
-            width: auto;
-        }
-    
-        header nav ul {
-            flex-direction: row;
-        }
-    
-        header nav ul li a {
-            display: block;
-    
-        }
+
     
         .info2 {
             flex-direction: row;
@@ -666,17 +645,7 @@ main {
     
     
     @media (min-width: 720px) {
-        header {
-            flex-direction: row;
-            justify-content: space-between;
-    
-    
-        }
-    
-        header nav ul {
-            flex-direction: row;
-        }
-    
+
         .info2 {
             flex-direction: row;
             flex-wrap: wrap;
@@ -691,24 +660,6 @@ main {
     
     
     @media (min-width:720px) {
-    
-        header {
-            flex-direction: row;
-            justify-content: space-between;
-        }
-    
-        header nav {
-            width: auto;
-        }
-    
-        header nav ul {
-            flex-direction: row;
-        }
-    
-        header nav ul li a {
-            display: inline-block;
-            border: none;
-        }
     
         .info {
             flex-direction: row;
