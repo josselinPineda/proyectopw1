@@ -110,18 +110,25 @@ footer nav ul li a {
 
 
 @media (min-width: 720px) {
+    nav.menu{
+        width: 300px;
+    }
 
-  
-    
 }
-@media (min-width: 1024px) {
+
+@media (min-width: 1024px){
+    nav.menu ul li a{
+        font-size: 1.3rem;
+    }   
+}
+@media (min-width: 1322px) {
     
     .menu-toggle {
         display: none; /* Ocultar el botón en pantallas grandes */
     }
 
     nav.menu {
-        display: flex; /* Mostrar el menú como una barra horizontal */
+        display: flex; 
         position: static;
         background: none;
         box-shadow: none;
@@ -140,7 +147,8 @@ footer nav ul li a {
     }
 
     nav.menu ul li a {
-        text-decoration: none;
+    font-size: 1rem;
+    text-decoration: none;
     color: #333;
     padding: 0.6rem 0.8rem;
     transition: color 0.3s ease;
