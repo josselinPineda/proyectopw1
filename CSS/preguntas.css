@@ -82,6 +82,7 @@ main {
 	overflow: hidden;
 	transition: .3s ease all;
 	cursor: pointer;
+	
 }
 
 .contenedor-pregunta:hover {
