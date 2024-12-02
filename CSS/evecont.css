@@ -1,0 +1,454 @@
+/*CSS MOVIL DE EVENTOS*/
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 70vh;
+
+}
+
+.slider .frametrack {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    transition: left 0.5s ease-in-out;
+}
+
+
+.slider .frametrack .slide {
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+}
+
+.slider .frametrack .slide img {
+    display: block;
+    width: 100vw;
+    height: 70vh;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.slider .frametrack .slide div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+    box-shadow: 3px 3px 5px #000;
+    box-sizing: border-box;
+}
+
+.slider .frametrack .slide h2 {
+    color: #000;
+    font-size: 3rem;
+    text-align: right;
+    padding: 1rem;
+    margin: 0;
+}
+
+.slider .frametrack .slide div::before {
+    content: '';
+    width: 380px;
+    height: 380px;
+    transform: translate(-50%, -50%);
+    background-image: radial-gradient(circle, #0000 45%, #000f 48%);
+
+}
+
+.container-evento {
+    max-width: 100%;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.info-evento {
+    font-size: 1.4rem;
+    text-align: justify;
+    margin: 0.25rem 0;
+    padding: 0.5rem 2rem;
+
+}
+
+.cajas {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.evento {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    border: 1px solid #000;
+    width: 300px;
+    height: 700px;
+    overflow: hidden;
+    background-color: #fff;
+    margin: 0 auto;
+
+}
+
+.evento img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+
+.evento h3 {
+    text-align: center;
+    margin: 0px;
+    padding: 0.75rem 0.5rem;
+    font-size: 1.8rem;
+    color: #d52b2b;
+}
+
+.evento p {
+    font-size: 1.4rem;
+    text-align: justify;
+    margin: 0.25rem 0;
+    padding: 1rem;
+
+}
+
+.evento a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    text-align: center;
+    padding: 0.7rem 0.5rem;
+    border-radius: 27px;
+    box-shadow: 3px 3px 7px #000;
+    margin: 1rem 2rem;
+}
+
+
+/*CSS MOVIL DE CONTACTANOS*/
+.container-contactanos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 10px;
+    padding: 1rem;
+}
+
+.informacion-contacto {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+}
+
+.fotohospital img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.container-contactanos h2 {
+    font-size: 18px;
+    color: #d52b2b;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.container-contactanos p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Formulario */
+.usuario {
+    margin: 10px auto;
+    background-color: #d52b2b;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.usuario h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    font-size: 3rem;
+}
+
+.datoformulario {
+    margin-bottom: 20px;
+}
+
+.datoformulario label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 2rem;
+}
+
+.datoformulario input,
+.datoformulario textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 2rem;
+}
+
+button[name="contacto"] {
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    color: #d52b2b;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button[name="contacto"]:hover {
+    background-color: #bb1a1a;
+    color: white;
+}
+
+
+
+@media (min-width: 720px) {
+
+    .container-contactanos {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    /* Formulario */
+    .usuario {
+        margin: 10px auto;
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+
+    .usuario h2 {
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+    }
+
+    .datoformulario {
+        margin-bottom: 20px;
+    }
+
+    .datoformulario label {
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+
+    .datoformulario input,
+    .datoformulario textarea {
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    button[name="contacto"] {
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+
+    .container-evento {
+        max-width: 720px;
+        padding: 0.5rem 1rem;
+    }
+
+    .cajas {
+        padding: 0.5rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .evento {
+        height: 500px;
+        width: 300px;
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    .evento img {
+        width: 100%;
+        height: 28vh;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+
+    .evento h3 {
+        margin: 0px;
+        padding: 0.75rem 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .evento p {
+        font-size: 1rem;
+    }
+
+    .evento a {
+        margin-top: auto;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container-evento {
+        max-width: 1024px;
+        padding: 0.5rem 1rem;
+    }
+
+    .cajas {
+        padding: 0.5rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .evento {
+        height: 530px;
+        width: 100%;
+        max-width: 300px;
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    .evento h3 {
+        margin: 0px;
+        padding: 0.75rem 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .evento p {
+        font-size: 1rem;
+        margin: 0.25rem 0;
+        padding: 0.5rem;
+    }
+
+    .evento a {
+        margin-top: auto;
+        margin-bottom: 1rem;
+    }
+
+    .evento img {
+        width: 100%;
+        height: 28vh;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .container-contactanos {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin: 10px auto;
+        padding: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .informacion-contacto {
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 10px;
+        flex: 1 1 calc(33.33% - 1rem);
+        margin: 10px;
+    }
+
+    .fotohospital img {
+        width: 100%;
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+
+    .container-contactanos h2 {
+        font-size: 40px;
+        color: #d52b2b;
+        margin-bottom: 10px;
+    }
+
+    .container-contactanos p {
+        font-size: 23px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    /* Formulario */
+    .usuario {
+        margin: 10px auto;
+        background-color: #d52b2b;
+        padding: 15px;
+        border-radius: 8px;
+        color: white;
+        flex: 1 1 100%;
+    }
+
+    .usuario h2 {
+        text-align: center;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .datoformulario {
+        margin-bottom: 15px;
+    }
+
+    .datoformulario label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: white;
+    }
+
+    .datoformulario input,
+    .datoformulario textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #dddddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    button[name="contacto"] {
+        width: 100%;
+        padding: 10px;
+        background-color: white;
+        color: #d52b2b;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    button[name="contacto"]:hover {
+        background-color: #bb1a1a;
+        color: white;
+    }
+}
