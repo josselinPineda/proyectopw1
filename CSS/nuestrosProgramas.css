@@ -9,7 +9,11 @@
     background-color: #f9f9f9;
     flex: 1;
 }
+.programas{
+    display: flex;
+    flex-wrap: wrap;
 
+}
 /* Estilos para las tarjetas */
 .tarjeta {
     display: flex;
