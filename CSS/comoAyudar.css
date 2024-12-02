@@ -68,7 +68,7 @@ nav.menu ul li a:hover {
     background-color: #fff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-
+    height: 70vh;
 }
 
 .tarjeta:hover {
@@ -123,6 +123,9 @@ nav.menu ul li a:hover {
     .container {
         gap: 5px;
     }
+    .tarjeta{
+        height: 75vh;
+    }
     .tarjeta h2{
         font-size: 1.3rem;
     }
@@ -142,7 +145,7 @@ nav.menu ul li a:hover {
 
     .tarjeta {
         width: 40vw;
-        height: 75vh;
+        height: 80vh;
     }
     .tarjeta h2{
         font-size: 1.5rem;
