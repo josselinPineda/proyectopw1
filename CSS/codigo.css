@@ -232,8 +232,86 @@ button[name="contacto"]:hover {
 
 
 
+/*CSS Movil ComoAyudar y nuestrosProgramas*/
+/* Contenedor de tarjetas */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    height: auto;
+    background-color: #f9f9f9;
+    flex: 1;
+}
+.programas{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+/* Estilos para las tarjetas */
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 90vw;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 50%; 
+    object-fit: cover;
+    object-position: center center;
+}
+
+.tarjeta h2 {
+    margin: 0;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    background-color: #d52b2b;
+    color: white;
+    text-align: center;
+}
+
+.tarjeta p {
+    padding: 10px;
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+}
+
+.tarjeta a {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #d52b2b;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    width: 80%;
+    transition: background-color 0.3s ease;
+}
+
+.tarjeta a:hover {
+    background-color: #a92323;
+}
+
+
 @media (min-width: 720px) {
 
+    /*Contactanos 720px*/
     .container-contactanos {
         flex-direction: column;
         justify-content: center;
@@ -272,6 +350,9 @@ button[name="contacto"]:hover {
         font-size: 1.2rem;
     }
 
+    /*Evento 720px*/
+
+
     .container-evento {
         max-width: 720px;
         padding: 0.5rem 1rem;
@@ -292,7 +373,7 @@ button[name="contacto"]:hover {
 
     .evento img {
         width: 100%;
-        height: 28vh;
+        height: 13vh;
         object-fit: cover;
         object-position: center center;
     }
@@ -301,7 +382,7 @@ button[name="contacto"]:hover {
     .evento h3 {
         margin: 0px;
         padding: 0.75rem 0.5rem;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .evento p {
@@ -312,9 +393,39 @@ button[name="contacto"]:hover {
         margin-top: auto;
         margin-bottom: 1rem;
     }
+
+
+
+    /*NuestrosProgrmas 720px*/
+
+    .container {
+        gap: 5px;
+    }
+    .tarjeta{
+        width: 45vw;
+
+    }
+    .tarjeta img{
+        height: 40vh;
+
+    }
+    .tarjeta h2{
+        font-size: 1.3rem;
+    }
+    .tarjeta p{
+        font-size: 1.1rem;
+        
+    }
+    .tarjeta a{
+        font-size: 1rem;
+        margin-top: auto;
+    }
 }
 
 @media (min-width: 1024px) {
+
+    /*Evento 1024px*/
+
     .container-evento {
         max-width: 1024px;
         padding: 0.5rem 1rem;
@@ -358,6 +469,7 @@ button[name="contacto"]:hover {
         object-fit: cover;
         object-position: center center;
     }
+        /*Contactanos 1024px*/
 
     .container-contactanos {
         display: flex;
@@ -385,6 +497,8 @@ button[name="contacto"]:hover {
         margin-top: 10px;
     }
 
+    /*Contactanos 1024px*/
+
     .container-contactanos h2 {
         font-size: 40px;
         color: #d52b2b;
@@ -397,7 +511,6 @@ button[name="contacto"]:hover {
         margin-bottom: 10px;
     }
 
-    /* Formulario */
     .usuario {
         margin: 10px auto;
         background-color: #d52b2b;
@@ -450,5 +563,28 @@ button[name="contacto"]:hover {
     button[name="contacto"]:hover {
         background-color: #bb1a1a;
         color: white;
+    }
+
+
+
+    /*NuestrosProgrmas 1024px*/
+
+
+    .tarjeta{
+        max-height: 110vh;
+
+    }
+    .tarjeta img{
+        height: 100%;
+    }
+    .tarjeta h2{
+        font-size: 1.3rem;
+    }
+    .tarjeta p{
+        font-size: 1.2rem;
+        
+    }
+    .tarjeta a{
+        font-size: 1.2rem;
     }
 }
