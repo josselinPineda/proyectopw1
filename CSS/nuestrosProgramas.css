@@ -21,7 +21,6 @@
     background-color: #fff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
 
 .tarjeta:hover {
@@ -78,16 +77,16 @@
     }
     .tarjeta{
         width: 45vw;
-        height: 115vh;
+
     }
     .tarjeta img{
         height: 45vh;
     }
     .tarjeta h2{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     .tarjeta p{
-        font-size: 1rem;
+        font-size: 1.1rem;
         
     }
     .tarjeta a{
@@ -96,18 +95,21 @@
     }
 }
 @media (min-width: 1024px) {
+    .tarjeta{
+        max-height: 110vh;
+
+    }
     .tarjeta img{
-        height: 100vh;
+        max-height: 80%;
     }
     .tarjeta h2{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .tarjeta p{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         
     }
     .tarjeta a{
-        font-size: 1.3rem;
-        margin-top: auto;
+        font-size: 1.2rem;
     }
 }
