@@ -84,6 +84,22 @@
         height: 45vh;
     }
     .tarjeta h2{
+        font-size: 1.2rem;
+    }
+    .tarjeta p{
+        font-size: 1rem;
+        
+    }
+    .tarjeta a{
+        font-size: 1rem;
+        margin-top: auto;
+    }
+}
+@media (min-width: 1024px) {
+    .tarjeta img{
+        height: 100vh;
+    }
+    .tarjeta h2{
         font-size: 1.5rem;
     }
     .tarjeta p{
@@ -93,10 +109,5 @@
     .tarjeta a{
         font-size: 1.3rem;
         margin-top: auto;
-    }
-}
-@media (min-width: 1024px) {
-    .tarjeta img{
-        height: 100vh;
     }
 }
