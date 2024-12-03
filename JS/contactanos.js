@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("formulario").addEventListener("submit", function (event) {
+    document.getElementById("formulario-contacto").addEventListener("submit", function (event) {
         event.preventDefault();
 
         const nombre = document.getElementById("nombre").value.trim();
